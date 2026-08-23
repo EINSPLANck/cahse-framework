@@ -1,0 +1,35 @@
+{
+  "format": "skillopt_sleep.tasks.v1",
+  "project": "mewcode-current-trajectory-probe",
+  "transcript_source": "mewcode.evolution.TaskTrajectory",
+  "n_sessions": 1,
+  "target_skill_path": "",
+  "reviewed": true,
+  "tasks": [
+    {
+      "id": "9e2259398a8843f58ed8cf098f3f6d9e",
+      "project": "F:\\mewcode_xiaolin\\mewcode",
+      "intent": "Fix failing checkout validation in src/checkout.py",
+      "context_excerpt": "files touched: src/checkout.py\ntests: pytest tests/test_checkout.py\nstructured_experience: {\"problem\": {\"component\": \"src/checkout.py\", \"description\": \"Fix failing checkout validation in src/checkout.py\", \"task_type\": \"bug_fix\"}, \"schema_version\": \"mewcode.task_experience.v1\", \"skillopt\": {\"attempted_solution_field\": \"solution.answer\", \"compatible\": true, \"intent_field\": \"problem.description\", \"reference_field\": \"solution.tests\"}, \"solution\": {\"answer\": \"Problem: Fix failing checkout validation in src/checkout.py\\nChanged files: src/checkout.py\\nValidation: pytest tests/test_checkout.py\\nOutcome: success\\n\\nFinal answer:\\nFixed checkout validation and verified the focused tests.\", \"changed_files\": [\"src/checkout.py\"], \"success\": true, \"tests\": [{\"command\": \"pytest tests/test_checkout.py\", \"exit_code\": 0, \"passed\": true}]}, \"trajectory\": {\"execution_context_excerpt\": \"# Task\\nFix failing checkout validation.\\n\\n# Memory Context\\ncheckout validation lives in src/checkout.py\", \"id\": \"9e2259398a8843f58ed8cf098f3f6d9e\", \"session_id\": \"probe-session\", \"tool_sequence\": []}}",
+      "system": "mewcode",
+      "attempted_solution": "Problem: Fix failing checkout validation in src/checkout.py\nChanged files: src/checkout.py\nValidation: pytest tests/test_checkout.py\nOutcome: success\n\nFinal answer:\nFixed checkout validation and verified the focused tests.",
+      "outcome": "success",
+      "reference_kind": "rubric",
+      "reference": "A successful solution should:\n- Address the task: Fix failing checkout validation in src/checkout.py\n- Keep the repair focused around: src/checkout.py\n- Pass or preserve the validation command: pytest tests/test_checkout.py\n- Produce an answer consistent with the captured MewCode solution evidence.",
+      "judge": {},
+      "tags": [
+        "coding",
+        "trajectory",
+        "skillopt-compatible",
+        "bug_fix"
+      ],
+      "source_sessions": [
+        "probe-session"
+      ],
+      "split": "train",
+      "origin": "real",
+      "derived_from": "9e2259398a8843f58ed8cf098f3f6d9e",
+      "skill_hint": ""
+    }
+  ]
+}
